@@ -24,24 +24,24 @@
   },
   "homepage": "https://github.com/datx02-21-16/datx02#readme",
   "devDependencies": {
-    "bulma": "^0.9.2",
-    "css-loader": "^5.1.1",
-    "html-loader": "^2.1.2",
-    "html-webpack-plugin": "^5.1.0",
-    "node-sass": "^6.0.1",
-    "purescript": "^0.14.0",
+    "bulma": "^0.9.4",
+    "css-loader": "^6.7.3",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.1",
+    "node-sass": "^8.0.0",
+    "purescript": "^0.15.9-8",
     "purescript-psa": "^0.8.2",
-    "purs-loader": "^3.7.2",
+    "purs-loader": "^4.0.0",
     "purty": "^7.0.0",
-    "sass-loader": "^11.0.1",
-    "spago": "^0.19.1",
-    "style-loader": "^2.0.0",
-    "webpack": "^5.50.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "sass-loader": "^13.2.2",
+    "spago": "^0.20.9",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.81.0",
+    "webpack-cli": "^5.0.2",
+    "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
-    "html2canvas": "^1.3.2",
-    "jspdf": "^2.3.1"
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1"
   }
 }

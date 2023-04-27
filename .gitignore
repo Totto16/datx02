@@ -295,3 +295,5 @@ dist
 .psc-ide-port
 
 .DS_Store
+
+/package-lock.json
