@@ -26,7 +26,7 @@ import Data.Tuple (Tuple(Tuple), snd)
 import Effect.Class (class MonadEffect)
 import FormulaOrVar (FFC(FC, VC), parseFFC)
 import GUI.Hint as Hint
-import GUI.PrintProof as PrintProof 
+import GUI.PrintProof as PrintProof
 import GUI.Rules (RuleType(..))
 import GUI.Rules as R
 import GUI.SymbolInput (symbolInput)
@@ -41,7 +41,7 @@ import Parser (parseFormula, parseVar, parsePremises)
 import Partial.Unsafe (unsafePartial, unsafeCrashWith)
 import Proof (NdError(..))
 import Proof as P
-import Text.Parsing.Parser (parseErrorMessage)
+import Parsing (parseErrorMessage)
 import Type.Proxy (Proxy(..))
 import Util (enumerate, moveWithin)
 import Web.Event.Event as Event

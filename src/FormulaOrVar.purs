@@ -6,7 +6,7 @@ module FormulaOrVar
 import Prelude
 import Control.Alternative ((<|>))
 import Data.Either (Either)
-import Text.Parsing.Parser (ParseError)
+import Parsing (ParseError)
 import Formula (Variable, Formula)
 import Latex (class Latex, toLatex)
 import Parser (parseFormula, parseVar)

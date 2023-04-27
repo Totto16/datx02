@@ -17,11 +17,12 @@ import Data.String (Pattern(Pattern))
 import Data.String as String
 import Control.Monad.State.Class (gets)
 import Partial.Unsafe (unsafePartial, unsafeCrashWith)
-import Text.Parsing.Parser (Parser, ParserT, ParseError, ParseState(ParseState), runParser, fail)
-import Text.Parsing.Parser.Combinators ((<?>), option, try, sepBy1, lookAhead, notFollowedBy)
-import Text.Parsing.Parser.String (anyChar, char, oneOf, satisfy, eof)
-import Text.Parsing.Parser.Token (GenLanguageDef(..), TokenParser, makeTokenParser, digit, upper, letter, alphaNum)
-import Text.Parsing.Parser.Expr (OperatorTable, Assoc(..), Operator(..), buildExprParser)
+import Parsing (Parser, ParserT, ParseError, ParseState(ParseState), runParser, fail)
+import Parsing.Combinators ((<?>), option, try, sepBy1, lookAhead, notFollowedBy)
+import Parsing.String (anyChar, char, satisfy, eof)
+import Parsing.String.Basic (oneOf)
+import Parsing.Token (GenLanguageDef(..), TokenParser, makeTokenParser, digit, upper, letter, alphaNum)
+import Parsing.Expr (OperatorTable, Assoc(..), Operator(..), buildExprParser)
 import Formula (Variable(..), Term(..), Formula(..))
 
 token :: TokenParser
