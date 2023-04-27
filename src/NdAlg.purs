@@ -18,8 +18,7 @@ import Data.List (List(Nil), (:))
 import Data.NonEmpty as NonEmpty
 import Data.NonEmpty (NonEmpty, (:|))
 import Partial.Unsafe (unsafePartial, unsafeCrashWith)
-import Control.Alternative ((<|>))
-import Control.MonadZero (guard)
+import Control.Alternative ((<|>), guard)
 import Formula (Variable(..), Term(..), Formula(..), formulaUnifier)
 import Util (findLast)
 
