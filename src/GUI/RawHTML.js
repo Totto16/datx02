@@ -1,4 +1,6 @@
 "use strict";
 
-exports.setInnerHTML
+setInnerHTML
 	= htmlString => element => () => element.innerHTML = htmlString;
+
+export default { setInnerHTML }

@@ -1,3 +1,4 @@
 "use strict";
 
-exports.pictureURL = name => require("./img/" + name + ".png");
+pictureURL = name => require("./img/" + name + ".png");
+export default { pictureURL }

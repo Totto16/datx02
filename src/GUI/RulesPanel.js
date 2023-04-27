@@ -3,4 +3,6 @@
 /**
  * Returns a string URL to the PNG image with the given name.
  */
-exports.pictureURL = name => require("./Pictures/" + name + ".png");
+pictureURL = name => require("./Pictures/" + name + ".png");
+
+export default { pictureURL }

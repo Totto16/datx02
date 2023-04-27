@@ -1,3 +1,5 @@
 "use strict";
 
-exports.manualHTMLString = require("./manual.html").default;
+manualHTMLString = require("./manual.html").default;
+
+export default { manualHTMLString }

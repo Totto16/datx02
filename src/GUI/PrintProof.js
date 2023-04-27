@@ -1,10 +1,8 @@
-
-const jspdf = require('jspdf')
-const html2canvas = require('html2canvas')
-
+import jspdf from 'jspdf'
+import html2canvas from 'html2canvas'
 
 
-exports.printProofer = () => {
+printProofer = () => {
     html2canvas(document.getElementById("printable")).then(function(canvas) {
         document.body.appendChild(canvas).hidden = true;
         var imgdata = canvas.toDataURL("image/png");
@@ -17,7 +15,7 @@ exports.printProofer = () => {
         var doc = new jspdf.jsPDF();
         doc.addImage(imgdata, "PNG", 52.5, position, imgWidth, imgHeight);
         heightLeft -= pageHeight;
-        
+
         while (heightLeft >= 0) {
             position = heightLeft - imgHeight;
             doc.addPage();
@@ -29,3 +27,5 @@ exports.printProofer = () => {
     });
 }
 
+
+export default {printProofer}

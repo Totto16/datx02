@@ -1,4 +1,6 @@
 "use strict";
 
-exports.addRowIcon = require("./img/add-row.svg");
-exports.exitBoxIcon = require("./img/exit-box.svg");
+addRowIcon = require("./img/add-row.svg");
+exitBoxIcon = require("./img/exit-box.svg");
+
+export default {addRowIcon, exitBoxIcon}
